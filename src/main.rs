@@ -6,7 +6,7 @@ use stroming::{
 };
 
 fn main() {
-    let events: Vec<Message> = (0..10000)
+    let events: Vec<Message> = (0..1000000)
         .map(|_| Message {
             message_type: "TestMessage".to_string(),
             data: r#"{"some":"key", "another": "key", "what_an": "excellent event"}"#
@@ -24,8 +24,8 @@ fn main() {
     }
 
     let (version, stream) = store.read_from_stream("TestStream-1", ReadDirection::Forwards);
-    assert_eq!(stream.len(), 10000);
-    assert_eq!(version, StreamVersion::Revision(9999));
+    assert_eq!(stream.len(), 1000000);
+    assert_eq!(version, StreamVersion::Revision(999999));
 
-    println!("Inserted 10000 events in {:?}", duration);
+    println!("Inserted 1000000 events in {:?}", duration);
 }
