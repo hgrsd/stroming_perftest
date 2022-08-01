@@ -9,6 +9,7 @@ fn main() {
     let events: Vec<Message> = (0..1000000)
         .map(|_| Message {
             message_type: "TestMessage".to_string(),
+            metadata: vec![],
             data: r#"{"some":"key", "another": "key", "what_an": "excellent event"}"#
                 .as_bytes()
                 .to_vec(),

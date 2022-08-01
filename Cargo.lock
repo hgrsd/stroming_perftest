@@ -27,9 +27,9 @@ checksum = "349d5a591cd28b49e1d1037471617a32ddcda5731b99419008085f72d5a53836"
 
 [[package]]
 name = "stroming"
-version = "0.0.3"
+version = "0.0.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a3298422aca2ddd5c00aa89f7ec7171d17debe7b2d8e8f5f7525f36ffa5d3d1a"
+checksum = "915b2a12c8b2d595a5781341bd727646785913b9e4cce821e37c91ca0cc4d411"
 dependencies = [
  "uuid",
 ]
